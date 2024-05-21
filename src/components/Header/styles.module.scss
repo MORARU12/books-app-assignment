@@ -1,0 +1,41 @@
+@import "../../assets/variables";
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-bottom: 1px solid $border--grey-color;
+  flex: 1;
+  z-index: 100;
+  background-color: #ffffffe6;
+  backdrop-filter: blur(10px);
+
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+
+    h2 {
+      font-family: "Merriweather", serif;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+    }
+  }
+}
+
+.active {
+  color: $primary-color;
+  font-weight: 600;
+}

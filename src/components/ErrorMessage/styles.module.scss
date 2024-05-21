@@ -1,0 +1,13 @@
+@import "../../assets/variables";
+
+.message {
+  font-family: "Merriweather", serif;
+  font-size: 18px;
+  margin-top: 50px;
+  text-align: center;
+  color: $txt--grey-color;
+  span {
+    font-size: 45px;
+    display: block;
+  }
+}

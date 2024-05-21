@@ -1,0 +1,22 @@
+@import "../../assets/variables";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+
+  input {
+    border: 1px solid $border--grey-color;
+    box-shadow: 0 3px 15px 2px rgb(0 0 0 / 7%);
+    width: 100%;
+    height: 50px;
+    border-radius: 12px;
+    padding: 15px;
+    transition: $transition;
+  }
+
+  input:hover {
+    box-shadow: 0 3px 15px 2px rgb(0 0 0 / 11%);
+  }
+}
