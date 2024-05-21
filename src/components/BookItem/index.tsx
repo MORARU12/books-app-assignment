@@ -3,8 +3,9 @@ import styles from "./styles.module.scss";
 import noImg from "../../assets/images/no-image.png";
 import { useAppDispatch } from "../../app/hooks";
 import { updateBook } from "../../features/book/bookSlice";
+import { IBook } from "../../types/global";
 
-const BookItem = ({ book }: any) => {
+const BookItem = (book: IBook) => {
   const dispatch = useAppDispatch();
   const navigate = useNavigate();
 
@@ -13,7 +14,7 @@ const BookItem = ({ book }: any) => {
     navigate("/book");
   };
 
-  let thumbnail = book.volumeInfo.imageLinks
+  let thumbnail: any = book.volumeInfo.imageLinks
     ? book.volumeInfo.imageLinks.thumbnail
     : noImg;
 
