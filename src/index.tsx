@@ -13,33 +13,20 @@ import { PersistGate } from "redux-persist/integration/react";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Layout />, // Use Layout as the root element
+    element: <Layout />,
     children: [
       {
         path: "/",
         element: <Search />,
-        // errorElement: <NotFoundPage />, // Uncomment if you have a NotFoundPage component
       },
       {
         path: "/favorites",
         element: <Favorites />,
-        // errorElement: <NotFoundPage />, // Uncomment if you have a NotFoundPage component
       },
       {
         path: "/book",
         element: <Book />,
-        // errorElement: <NotFoundPage />, // Uncomment if you have a NotFoundPage component
       },
-      // {
-      //   path: '/profiles',
-      //   element: <ProfilesPage />,
-      //   children: [
-      //     {
-      //       path: '/profiles/:profileId',
-      //       element: <ProfilePage />,
-      //     },
-      //   ],
-      // },
     ],
   },
 ]);
